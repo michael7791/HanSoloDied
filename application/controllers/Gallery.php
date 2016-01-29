@@ -11,9 +11,10 @@
  *
  * @author a7823
  */
-class Gallery extends CI_Controller {
+class Gallery extends Application {
     //put your code here
     public function index() {
-        $this->load->view('gallery');
+        $this->data['pagebody'] = 'gallery';
+        $this->render();
     }
 }

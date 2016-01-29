@@ -11,10 +11,11 @@
  *
  * @author a7823
  */
-class About extends CI_Controller {
+class About extends Application {
     //put your code here
     public function index()
 	{
-		$this->load->view('about');
+		$this->data['pagebody'] = 'about';
+                $this->render();
 	}
 }
